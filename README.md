@@ -7,3 +7,14 @@ Nhóm FUNET:
   4. Cao Đức Hiếu - 44.01.104.085
   5. Phan Thị Lành - 4501104122
   6. Nguyễn Thị Thùy Trang - 4501104248
+  
+  
+STT   Người phụ trách       Mô tả nội dung công việc    Kết quả mong đợi
+1     Ngô Đắc Vinh          Model                       Đạt
+2     Trần Thành Trung      Controller                  Đạt
+3     Quách Chí Hào         Model                       Đạt
+4     Cao Đức Hiếu          Controller + View           Đạt
+5     Phan Thị Lành         Database                    Đạt
+6     Nguyễn Thị Thùy Trang Controller + View       Đạt
+
+
