@@ -1,0 +1,45 @@
+﻿@model List<Football_project.Models.Player>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Cầu thủ</h2>
+<div>
+    <a href="/players/create" class="btn btn-success" style="float:right; margin-right:40px">Thêm cầu thủ mới</a>
+</div>
+
+<form class="d-flex flex-row align-items-center flex-wrap" action="/players/index">
+    <input type="search"
+           class="form-control w-auto"
+           id="search"
+           name="search"
+           value="@ViewBag.Search"
+           placeholder="Tên cầu thủ" />
+    <button type="submit" class="btn btn-primary mx-2">Tìm</button>
+</form>
+
+<table class="table">
+    <tr>
+        <th>Mã cầu thủ</th>
+        <th>Tên cầu thủ</th>
+        <th>Số áo</th>
+        <th>Vị trí</th>
+        <th>Đội</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.PlayerID</td>
+            <td>@item.PlayerName</td>
+            <td>@item.PlayerNumber</td>
+            <td>@item.RoleName</td>
+            <td>@item.TeamName</td>
+            <td>
+                <a href="/players/edit/@item.PlayerID">Sửa</a> |
+                <a href="/players/delete/@item.PlayerID">Xoá</a>
+            </td>
+        </tr>
+    }
+</table>

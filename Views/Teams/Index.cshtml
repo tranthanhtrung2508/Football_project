@@ -1,0 +1,31 @@
+﻿@model List<Football_project.Models.Team>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Đội bóng</h2>
+<div>
+    <a href="/teams/create" class="btn btn-success" style="float:right; margin-right:40px">Thêm đội bóng mới</a>
+</div>
+<table class="table">
+    <tr>
+        <th>Mã đội bóng</th>
+        <th>Quốc gia</th>
+        <th>Số cầu thủ</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TeamID</td>
+            <td>@item.TeamName</td>
+            <td>@item.Amount</td>
+            <td>
+                <a href="/teams/edit/@item.TeamID">Sửa</a> |
+                <a href="/teams/delete/@item.TeamID">Xoá</a>
+            </td>
+        </tr>
+    }
+</table>
+

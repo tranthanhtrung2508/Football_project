@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Create Player";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Thêm cầu thủ</h2>
+
+<form action="/players/create" method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="PlayerName">Tên cầu thủ</label>
+            <input type="text"
+                   class="form-control"
+                   id="PlayerName"
+                   name="PlayerName"
+                   placeholder="Nhập tên..." />
+        </div>
+        <div class="col-md-6">
+            <label for="PlayerNumber">Số áo</label>
+            <input type="number"
+                   class="form-control"
+                   id="PlayerNumber"
+                   name="PlayerNumber"
+                   placeholder="Nhập số áo..." />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label for="RoleName">Vị trí</label>
+            <input type="text"
+                   class="form-control"
+                   id="RoleName"
+                   name="RoleName"
+                   placeholder="Nhập vị trí cầu thủ..." />
+        </div>
+        <div class="col-md-6">
+            <label for="TeamName">Tên đội</label>
+            <input type="text"
+                   class="form-control"
+                   id="TeamName"
+                   name="TeamName"
+                   placeholder="Nhập tên đội..." />
+        </div>
+    </div>
+    <br />
+    <br />
+    <button type="submit" class="btn btn-success">Thêm</button>
+    <a href="/players" class="btn btn-danger">Trở về</a>
+</form>
+

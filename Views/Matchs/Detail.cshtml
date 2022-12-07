@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Danh sách bàn thắng</h2>
+
+<table class="table">
+    <tr>
+        <th>Mã trận đấu</th>
+        <th>Cầu thủ</th>
+        <th>Số bàn ghi</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MatchID</td>
+            <td>@item.PlayerName</td>
+            <td>@item.NumberOfGoal</td>
+
+        </tr>
+    }
+</table>
+
+<a href="@Url.Action("Index", "Matchs")">Trở về danh sách các trận đấu</a>

@@ -1,0 +1,31 @@
+﻿@model List<Football_project.Models.Match>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Trận đấu</h2>
+<table class="table">
+    <tr>
+        <th>Mã trận đấu</th>
+        <th>Đội 1</th>
+        <th>Đội 2</th>
+        <th>Tỉ số</th>
+        <th>Số bàn thắng</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MatchID</td>
+            <td>@item.Team1Name</td>
+            <td>@item.Team2Name</td>
+            <td>@item.TiSo</td>
+            <td>
+                <a href="/matchs/detail/@item.MatchID">Chi tiết</a>
+            </td>
+
+        </tr>
+    }
+</table>
+

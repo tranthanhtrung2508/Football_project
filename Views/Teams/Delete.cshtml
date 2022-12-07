@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Xóa đội bóng</h2>
+
+<form action="/teams/delete/@Model.TeamID" method="post">
+    <input type="hidden" name="TeamID" value="@Model.TeamID" />
+    <table class="table">
+        <tr>
+            <th>Tên đội bóng</th>
+            <td>@Model.TeamName</td>
+        </tr>
+        <tr>
+            <th>Số cầu thủ</th>
+            <td>@Model.Amount</td>
+        </tr>
+    </table>
+    <br/>
+    <br/>
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a href="/teams" class="btn btn-dark">Trở về</a>
+</form>
