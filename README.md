@@ -9,12 +9,12 @@ Nhóm FUNET:
   6. Nguyễn Thị Thùy Trang - 4501104248
   
   
-STT   Người phụ trách       Mô tả nội dung công việc    Kết quả mong đợi
-1     Ngô Đắc Vinh          Model+Controller+View       Đạt
-2     Trần Thành Trung      Controller                  Đạt
-3     Quách Chí Hào         Controller+View             Đạt
-4     Cao Đức Hiếu          Model                       Đạt
-5     Phan Thị Lành         Database                    Đạt
-6     Nguyễn Thị Thùy Trang Controller + View           Đạt
+STT   Người phụ trách         Mô tả nội dung công việc    Kết quả mong đợi    Lớp
+1     Ngô Đắc Vinh            Model+Controller+View       Đạt                 Lớp thứ 4
+2     Trần Thành Trung        Controller                  Đạt                 Lớp thứ 3
+3     Quách Chí Hào           Controller+View             Đạt                 Lớp thứ 3
+4     Cao Đức Hiếu            Model                       Đạt                 Lớp thứ 3
+5     Phan Thị Lành           Database                    Đạt                 Lớp thứ 3
+6     Nguyễn Thị Thùy Trang   Controller + View           Đạt                 Lớp thứ 3
 
 
