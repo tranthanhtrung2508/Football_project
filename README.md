@@ -15,6 +15,6 @@ STT   Người phụ trách       Mô tả nội dung công việc    Kết qu�
 3     Quách Chí Hào         Controller+View             Đạt
 4     Cao Đức Hiếu          Model                       Đạt
 5     Phan Thị Lành         Database                    Đạt
-6     Nguyễn Thị Thùy Trang Controller + View       Đạt
+6     Nguyễn Thị Thùy Trang Controller + View           Đạt
 
 
